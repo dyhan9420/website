@@ -1,0 +1,227 @@
+@charset utf-8;
+@font-face {font-family:'Sofia Pro'; src:url(../fonts/sofiapro-light.otf)}
+
+
+html, body {height: 100%;width: 100%;position: relative;}
+
+/* 레이아웃 */
+#section1 {height: 100vh; margin: 0; height: 100%; width: 100%; overflow: hidden; position: relative;}
+#section2 {height: 1000px; background: rgb(72, 60, 85); position: relative;} 
+#section3 {position: relative;}
+#section4 {}
+#section5 {}
+#section6 {}
+
+
+/*헤더*/
+.header {position: fixed; top: 0; left: 0; width: 100%; height: 50px; z-index: 100;}
+.headerWrap {overflow: hidden;}
+.header .logo {float: left; margin: 5px 0 0 20px; color: #fff; font-size: 25px; font-family:'Sofia Pro';}
+.header .logo span {color: #ffc017; font-weight: bold;}
+.header .menu {float: right; margin-right: 20px; width : 40px; height : 40px; position: relative; overflow: hidden;}
+.menu, .menu span {transition : all .3s; box-sizing : border-box;}
+.menu span {position : absolute; left : 0; width : 70%; height : 3px; background-color : #fff; border-radius : 2px; border:none;}
+.menu span:nth-of-type(1) {bottom : 20px;}
+.menu span:nth-of-type(2) {bottom : 10px;}
+.menu span:nth-of-type(3) {bottom : 0;}
+
+.menu.active span:nth-of-type(1) {
+	-webkit-transform : translateY(10px) rotate(-45deg);
+	transform: translateY(10px) rotate(-45deg);
+}
+.menu.active span:nth-of-type(2) {opacity: 0;}
+.menu.active span:nth-of-type(3) {
+    background: #ffc017;
+	-webkit-transform: translateY(-10px) rotate(45deg);
+	transform: translateY(-10px) rotate(45deg);
+}
+
+
+
+/* 섹션1 */
+.sec1 {}
+#section1 .sec1 .text {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); color: #fff; z-index: 1000; }
+#section1 .text {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 645px; text-align: left;}
+#section1 .text h1,
+#section1 .text > p {font-family: 'Comfortaa', cursive; font-size: 40px; color: #f8f8f8; line-height: 1.5;}
+#section1 .typing {margin: 0 30px; display: inline-block; font-family: 'Nanum Myeongjo', serif; font-size: 50px; color: #F3BDA1; border-right: 3px solid black; text-align: center;}
+
+@keyframes cloudungsil {
+    0% {right: 300px; filter: brightness(100%);}
+    100% {right: 100%; filter: brightness(70%);}   
+}
+
+
+/* 섹션2 */
+#section2 {position: relative; /*background: -webkit-linear-gradient(rgb(72, 60, 85) 30%, rgb(52, 53, 73) 30%); */background: radial-gradient( closest-side at 70% 40%, rgb(233,171,150), rgb(72, 60, 85) );}
+#section2 .banner {position: relative; top:0; left:0; width: 100%;}
+#section2 .layer {position: absolute; top: 0px; right: 0; bottom: 0; left: 0;}
+#section2 .layer img {position: absolute; display: block; width: 100%; }
+#section2 .layer.img1 {bottom: 0px;}
+#section2 .layer.img2 {bottom: 0px;}
+#section2 .layer.img3 {bottom: 0px;}
+
+
+
+
+
+
+/* 섹션3 */
+#section3 {position: relative; background-color: #343549; height: 100vh;}
+.skill_wrap {position: absolute; bottom:50%; left:50%; transform: translate(-50%,-50%); overflow: hidden; width:80%; display: inline-block; box-sizing: border-box; z-index: 3;}
+.mtit {font-family: 'Comfortaa', cursive; color: #fff; font-size: 35px;}
+.skill_wrap .mtit {margin-bottom: 40px; margin-left: 5%;}
+#section3 .skill_wrap .ggumim {width: 60px; display: inline-block;}
+.skill_wrap > div {float: left; width: 16.666%; box-sizing: border-box; color:#fff; text-align: center;}
+.skill_wrap > div p.pie {position: relative;}
+.skill_wrap > div strong {position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); color: #bda4a9; font-size:30px;}
+.skill_wrap > div strong:after {content:'%'; display: inline-block; font-size: 13px;}
+.skill_wrap > div h3 {color:#F3BDA1; margin-top: 10px;font-family:'Sofia Pro'; font-size: 16px;}
+
+
+/* 배경 */
+.noite {background: -webkit-linear-gradient(top, rgb(20, 25, 49) 50%, rgb(56, 58, 88)80%, rgb(72, 60, 85)); width: 100%; height: 100%; position: absolute; overflow: hidden;}
+.constelacao {position: absolute; left: 0; top: 0; width: 100%; height: 100%; animation: rotate 600s infinite linear;}
+.estrela {background-color: white; border-radius: 50%; position: absolute; animation: estrela linear infinite;}
+.estrela.style1 {animation-duration: 0.5s; animation-name: estrela; }
+.estrela.style2 {animation-duration: 1s; animation-name: estrela; }
+.estrela.style3 {animation-duration: 1.5s; animation-name: estrela; }
+.estrela.style4 {animation-duration: 2s; animation-name: estrelaDestacada; }
+.estrela.tam1 {width: 1px; height: 1px; }
+.estrela.tam2 {width: 2px; height: 2px; }
+.estrela.tam3 {width: 3px; height: 3px; }
+.estrela.opacity1 {opacity:  1; }
+.estrela.opacity2 {opacity: .5; }
+.estrela.opacity3 {opacity: .1; }
+
+.meteoro {
+  position: absolute;
+  background-color: #fff;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  transform: rotate(-35deg);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+}
+
+.meteoro:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 0;
+  height: 0;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-left: 85px solid white;
+  position: absolute;
+  left: 2px;
+  top: 0;
+}
+
+.meteoro.style1 {animation-name: meteoroStyle1; }
+.meteoro.style2 {animation-name: meteoroStyle2; }
+.meteoro.style3 {animation-name: meteoroStyle3; }
+.meteoro.style4 {animation-name: meteoroStyle4; }
+
+.lua {
+  position: absolute;
+  right: 200px;
+  top: 150px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: 0 0 160px 0px #fff, 0 0 30px -4px #fff, 0 0 8px 2px rgba(255, 255, 255, 0.26);
+  background-color: #fff;
+  animation-name: lua;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+}
+
+.lua .textura {
+  background-image: url(https://raw.githubusercontent.com/interaminense/starry-sky/master/src/img/bgMoon.png);
+  background-position: center;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  opacity: 0.4;
+}
+
+.floresta {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.floresta img {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+@keyframes escurecer {
+  0%   { top: 0; }
+  100% { top: 100%; }
+}
+
+@keyframes estrela {
+  0% {box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.05);}
+  50% {box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.4);}
+  100% {box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.05);}
+}
+
+@keyframes estrelaDestacada {
+  0% {background-color: #FFFFFF; box-shadow: 0 0 10px 0px rgba(255, 255, 255, 1);}
+  20% {background-color: #FFC4C4; box-shadow: 0 0 10px 0px rgb(255, 196, 196, 1);}
+  80% {background-color: #C4CFFF; box-shadow: 0 0 10px 0px rgb(196, 207, 255, 1);}
+  100% {background-color: #FFFFFF; box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.2);}
+}
+
+@keyframes meteoroStyle1 {
+  0% {opacity: 0; right: 300px; top: 100px; }
+  30% {opacity: .3; }
+  60% {opacity: .3; }
+  100% {opacity: 0; right: 1000px; top: 600px; }
+}
+
+@keyframes meteoroStyle2 {
+  0% {opacity: 0; right: 700px; top: 100px; }
+  30% {opacity: 1; }
+  60% {opacity: 1; }
+  100% {opacity: 0; right: 1400px; top: 600px; }
+}
+
+@keyframes meteoroStyle3 {
+  0% {opacity: 0; right: 300px; top: 300px; }
+  30% {opacity: 1; }
+  60% {opacity: 1; }
+  100% {opacity: 0; right: 1000px; top: 800px; }
+}
+
+@keyframes meteoroStyle4 {
+  0% {opacity: 0; right: 700px; top: 300px; }
+  30% {opacity: 1; }
+  60% {opacity: 1; }
+  100% {opacity: 0; right: 1400px; top: 800px; }
+}
+
+@keyframes lua {
+  0%{box-shadow: 0 0 160px 0px #fff, 0 0 30px -4px #fff, 0 0 8px 2px rgba(255, 255, 255, 0.26);}
+  50% {box-shadow: 0 0 80px 0px #fff, 0 0 30px -4px #fff, 0 0 8px 2px rgba(255, 255, 255, 0.26);}
+  100% {box-shadow: 0 0 160px 0px #fff, 0 0 30px -4px #fff, 0 0 8px 2px rgba(255, 255, 255, 0.26);}
+}
+
+@keyframes rotate {
+  0% {-webkit-transform: rotate(0deg);}
+  100% {-webkit-transform: rotate(360deg);}
+}

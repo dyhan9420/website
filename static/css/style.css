@@ -1,0 +1,84 @@
+/* nav */
+#nav {position: fixed; left: 0; top: 0px; width: 100%; height: 60px; z-index: 1000; background-color: rgba(255,255,255,0.0); transition: all 0.3s ease; box-sizing: border-box;}
+#nav.on {position: fixed; top: -61px;}
+#nav h1 {float: left; color: #fff; font-size: 35px; padding: 5px 5px 5px 15px;}
+#nav .menu {float: right; padding-right: 10px; }
+#nav .menu li {display: inline; }
+#nav .menu li a {display: inline-block; padding: 20px 15px; color: #fff; text-transform: capitalize; font-size: 1.6rem;}
+#nav .menu li.active a {color: #F3BDA1;}
+#nav .mNav {display: none; position: absolute; top: 7px; right: 10px; width: 65px; height: 45px; cursor: pointer;/*background-color: rgba(255,255,255,0.3);*/}
+
+/* contents */
+#contents {text-align: center; color: #fff;}
+#contents > div {height: 100vh; position: relative;}
+
+
+/* section */
+#section1 {background:radial-gradient(ellipse farthest-corner at center bottom, #3AA17E, #00537E);}
+#section2 {background:radial-gradient(ellipse farthest-corner at center top, #A3A1FF, #3A3897); }
+#section3 {background:radial-gradient(ellipse farthest-corner at center top, #29ABE2, #4F00BC);}
+#section4 {background:radial-gradient(ellipse farthest-corner at center top, #FF5300, #45145A);}
+#section5 {background:radial-gradient(ellipse farthest-corner at center bottom, #852D91, #312A6C);}
+#section6 {background:radial-gradient(ellipse farthest-corner at center top, #FBB03B, #D4145A);}
+
+
+/*text animation*/
+#contents > div h2 {transition: all 0.6s ease-in-out;}
+/*#section1 h2 {opacity: 0; transform: translate(0,0);}*/
+#section2 h2 {opacity: 0; /*transform: translate(0,-50px);*/}
+#section3 h2 {opacity: 0; /*transform: translate(-20%,0);*/}
+#section4 h2 {opacity: 0; /*transform: translate(10%,10%);*/}
+#section5 h2 {opacity: 0; /*transform: rotate(50deg);*/}
+#section6 h2 {opacity: 0; /*transform: skewX(-40deg);*/}
+#section1.show h2 {opacity: 1; transform: translate(0,0);}
+#section2.show h2 {opacity: 1; transform: translate(0,0);}
+#section3.show h2 {opacity: 1; transform: translate(0,0);}
+#section4.show h2 {opacity: 1; transform: translate(0,0);}
+#section5.show h2 {opacity: 1; transform: rotate(0);}
+#section6.show h2 {opacity: 1; transform: skewX(0);}
+
+
+
+/*section1*/
+#section1 {background: url(../img/bg01Nomoon.png) bottom center; background-size: cover;}
+#section1 .mainText {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 550px; text-align: left;}
+#section1 h2,
+#section1 .mainText > p {font-family: 'Nanum Myeongjo', serif; font-size: 3.8rem; font-weight: bold; color: #896785;}
+#section1 .typing {
+	margin: 0 30px;
+	display: inline-block;
+	font-family: 'Nanum Myeongjo', serif;
+	font-size: 3.8rem;
+    color: #F3BDA1;
+	
+	border-right: 3px solid black;
+	text-align: center;
+}
+#section1 img {width: 7%; position: absolute; bottom: 250px; right: 300px; animation: cloudungsil 40s linear infinite}
+@keyframes cloudungsil {
+    0% {right: 300px; filter: brightness(100%);}
+    100% {right: 100%; filter: brightness(70%);}   
+}
+
+
+
+/*section2*/
+.subtit {font-family: 'Nanum Myeongjo', serif; font-size: 3.5rem; font-weight: bold; color: #F3BDA1;}
+
+
+#section2 {background: url(../img/bg02.png) top center; background-size: cover; border: 3px solid yellow;}
+#section2 .sectCont {margin-top: 15vw;}
+#section2 h2.subtit {margin: 5vw; text-align: left;}
+#section2 .skills {width: 90%; margin: 0 auto; overflow: scroll; position: relative; height: 200px;overflow: hidden;}
+#section2 .skills .skillList {width: 150%; position: absolute;left: 0;top: 0;}
+#section2 .skills li {display: inline-block; padding: 20px 50px; text-align: left;}
+#section2 .skills li .skillKinds {}
+#section2 .skills li .skillName {font-size: 30px;}
+#section2 .skills li .skillPoint {font-size: 50px;}
+
+
+
+
+
+
+

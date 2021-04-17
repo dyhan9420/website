@@ -1,12 +1,170 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <meta name="author" content="webstoryboy">
+    <meta name="description" content="메가박스 사이트 따라하면서 배우는 튜토리얼입니다.">
+    <meta name="keywords" content="메가박스, 유투브, 영화, 최신영화, 영화관, CGV, 롯데시네마, 웹스토리보이, 웹스, 사이트 만들기, 따라하기, 이미지 슬라이드">
+    <title>Do'sFolio</title>
+    
+    <link rel="stylesheet" href="static/css/reset.css">
+    <link rel="stylesheet" href="static/css/style2.css">
+    <link rel="stylesheet" href="static/css/font-awesome.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo:400,700&display=swap&subset=korean" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+
+    <!-- HTLM5shiv ie6~8 -->
+    <!--[if lt IE 9]> 
+        <script src="assets/js/html5shiv.min.js"></script>
+        <script type="text/javascript">
+            alert("현재 브라우저는 지원하지 않습니다. 크롬 브라우저를 추천합니다.!");
+        </script>
+    <![endif]-->
 </head>
 <body>
-    포트폴리오 업로드 준비 중 ..
+    <header class="header">
+        <div class="headerWrap">
+            <a href="#" class="logo"><span>:D</span>ohan</a>
+            <a href="#" class="menu">
+                <span> </span>
+                <span> </span>
+                <span> </span>
+            </a>
+        </div>
+        <div class="subMenu" style="display: none">
+            <ul>
+                <li><a href="#section1">intro</a></li>
+                <li><a href="#section2">skills</a></li>
+                <li><a href="#section3">works</a></li>
+                <li><a href="#section4">contact</a></li>
+            </ul>
+        </div>
+    </header>
+   
+    <div id="section1">
+        <div class="container">
+            <div class="row">
+                <div class="sec1">
+                    <div class="text">
+                        <p>Hi, I'm :Do.</p>
+                        <h1>I publish <span class="typing">standard</span> site.</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg">
+            <div class="noite"></div>
+            <div class="constelacao"></div>
+            <div class="lua">
+                <div class="textura"></div>
+            </div>
+            <div class="chuvaMeteoro"></div>
+        </div>
+    </div>
+    <!-- //section1 -->
+    
+    <div id="section2">
+        <div class="container">
+            <div class="row">
+                <div class="sec2">
+                    <div class="banner">
+                        <div class="effect">
+                            <div class="layer img1 rellax" data-rellax-speed="-1" >
+                                <img src="img/rrbg_01.png" alt="Buliding Image">
+                            </div>
+                            <div class="layer img2 rellax" data-rellax-speed="1">
+                                <img src="img/bg_022.png" alt="Buliding Image Layer">
+                            </div>   
+                            <div class="layer img3 rellax" data-rellax-speed="3">
+                                <img src="img/rbg_03.png" alt="Buliding Image Layer">
+                            </div>  
+                                               
+                        </div>
+                        
+                           
+                    </div>
+                    <div style="position: absolute; bottom: 0;  width: 100%; height: 115px; bottom: 0; background-color: #343549; z-index: 1;">here</div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //section2 -->
+    
+    <div id="section3">section3
+        <div class="skill_wrap about">
+            <h2 class="mtit">Skills</h2>
+            <img src="img/planet.png" alt="빛나는행성이미지" class="ggumim">
+            <div class="skill1">
+                <p class="pie" data-percent="90">
+                    <strong class="count">90</strong>
+                </p>
+                <h3>HTML</h3>
+            </div>
+            <div class="skill2">
+                <p class="pie" data-percent="90">
+                    <strong class="count">90</strong>
+                </p>
+                <h3>CSS</h3>
+            </div>
+            <div class="skill3">
+                <p class="pie" data-percent="75">
+                    <strong class="count">75</strong>
+                </p>
+                <h3>JAVASCRIPT</h3>
+            </div>
+            <div class="skill4">
+                <p class="pie" data-percent="75">
+                    <strong class="count">80</strong>
+                </p>
+                <h3>JQUERY</h3>
+            </div>
+            <div class="skill5">
+                 <p class="pie" data-percent="90">
+                    <strong class="count">85</strong>
+                </p>
+                <h3>PHOTOSHOP</h3>
+            </div>
+            <div class="skill6">
+                 <p class="pie" data-percent="90">
+                    <strong class="count">90</strong>
+                </p>
+                <h3>ILLUST</h3>
+            </div>
+        </div>
+    </div><!-- //section3 -->
+    <div id="section4"></div><!-- //section4 -->
+    <div id="section5"></div><!-- //section5 -->
+    <div id="section6"></div><!-- //section6 -->
+    
+    
+    
+    
+    
+    <!-- 자바스크립트 라이브러리 -->
+    <script src="static/js/jquery.min_1.12.4.js"></script>
+    <script src="static/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="static/js/modernizr-custom.js"></script>
+    <script src="static/js/easypiechart.min.js"></script>
+    <script src="static/js/ie-checker.js"></script>
+    <script src="static/js/rellax.min.js"></script>
+    <script src="static/js/reWrite.js"></script>
+    <script src="static/js/custom.js"></script>
+    
+    <script>
+        window.onload = init;
+        counter(); //skills
+        
+        var rellax = new Rellax('.rellax');
+        
+        $('.menu').on('click', function() {
+           $(this).toggleClass('active'); 
+        });
+        
+        
+    </script>
+    
 </body>
 </html>
